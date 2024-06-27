@@ -1,0 +1,304 @@
+:root{
+    --deepdark:  #181820;
+    --bluecolor: #2374e1 ;
+    --lightdark:  #1f1f27;
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--deepdark);
+    display: flex;
+}
+
+/* aside css */
+
+.aside-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searchbox{
+    background-color: var(--lightdark);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.searchbox input{
+    border: none;
+    background-color: transparent;
+}
+
+.searchbox input :focus{
+    outline: none;
+    border: none;
+    
+}
+
+.searchbox i {
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+.sidebarlink{
+    display: flex;
+    gap: 0.6rem;
+    margin:1rem 0.3rem;
+    align-items: center;
+}
+
+.sidebarlink p{
+    color: #fff;
+}
+
+.sidebarlink:hover{
+    background-color: lightskyblue;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    transition: all is ease-in-out;
+
+}
+
+aside{
+    flex: 1;
+    background-color: var(--lightdark);
+    height: 100vh;
+}
+
+main{
+    flex: 3;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--lightdark);
+}
+
+header img{
+    margin: 0 1rem;
+}
+
+header img:hover{
+    border-bottom: 2px solid var(--bluecolor);
+}
+
+section{
+    display: flex;
+    padding: 2rem 5rem;
+    gap: 3rem;
+
+}
+
+section div:first-child{
+    background-color:#1f1f27 ;
+    flex: 2;
+}
+
+section div:last-child{
+    background-color: #1f1f27;
+    flex: 0.7;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    
+}
+
+
+.top div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    
+}
+
+.top hr{
+    background-color: #fff;
+}
+
+.stories{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.4rem;
+    padding: 1rem;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar(
+    display: none;
+)
+
+.stories div:first-child{
+    height: 30vh;
+    background-image: url(./images/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+    width: auto;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stories div:first-child i{
+    background-color: #2374e1;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storiesimgs{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 1rem;
+    left: 1.6rem;
+}
+
+.stories div:nth-child(2){
+    height: 30vh;
+    background-image: url(./images/Rectangle\ 14\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+    width: auto;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories div{
+    position: relative;
+}
+
+.storiesimg{
+    height: 30vh;
+    background-image: url(./images/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+    width: auto;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 1rem;
+    left: 1.6rem;
+}
+
+.storiesimg{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 2px;
+    position: absolute;
+    top: 1rem;
+    left: 1.6rem;
+}
+
+.stories div:nth-child(3){
+    height: 30vh;
+    background-image: url(./images/Rectangle\ 15.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    width: auto;
+    border-radius: 0.4rem;
+}
+
+.stories div:nth-child(4){
+    height: 30vh;
+    background-image: url(./images/Rectangle\ 16.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+    width: auto;
+    border-radius: 0.4rem;
+}
+
+.stories p, .stories i{
+    color: #fff;
+    display: block;
+    text-align: center;
+    
+}
+
+.mainaside{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+div p {
+    color: #fff;
+}
+
+.contacticon{
+    display: flex;
+}
+
+.gigy{
+    display: flex;
+    gap: 7rem;
+}
+
+.activeicon div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+aside p{
+    color: white;
+}
+
+@media(max-width: 992px) {
+ header{  
+    flex-direction: column;
+    gap: 1rem;
+}
+
+}
+
+@media(max-width:768px) {
+    aside{
+        display: none;
+    }
+
+    section{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    stories{
+
+    }
+
+}

@@ -1,0 +1,47 @@
+*{
+    background-color: #f00;
+
+}
+
+h1{
+    background: radial-gradient(ellipse , yellow, green,blue, black);
+    height: 50vh;
+    animation-name: changecolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+p{
+    background:radial-gradient(circle, red, blue, white);
+    color: transparent;
+    background-clip: text;
+    background-position: 100%;
+    font-size: 3rem;
+    animation-name: animatetext;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+ /* .image{
+    height: 70vh;
+    width: 50vw;
+    background-image: url(./images/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size:contain ;
+    background-position: left; 
+    
+} */
+
+@keyframes changecolor{
+    0% {color:#fff;transform: rotate(50deg);}
+    25% {color: darkmagenta;transform: rotate(-68deg);}
+    50%{color: burlywood;transform: rotate(100deg);}
+    70%{color: gold;transform: rotate(-65deg);}
+}
+
+@keyframes animatetext{
+    0%{ background-size: 0 0;}
+    25%{background-size: 100% 0;}
+    50%{background-size: 100% o;}
+    75%{background-size: 0 ;}
+} 
